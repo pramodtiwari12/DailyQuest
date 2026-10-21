@@ -1,0 +1,6 @@
+{
+  "name": "DayQuest",
+  "description": "Mindful daily task and quest progression tracker with restrained gamification",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

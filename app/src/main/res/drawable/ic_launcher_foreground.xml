@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Subtle glow ring -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#80FFFFFF"
+        android:strokeWidth="2.5"
+        android:pathData="M54,28 A26,26 0 1,0 54,80 A26,26 0 1,0 54,28" />
+    <!-- North star diamond / sword tip -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,26 L60,48 L54,44 L48,48 Z" />
+    <!-- South star diamond -->
+    <path
+        android:fillColor="#FFD166"
+        android:pathData="M54,82 L60,60 L54,64 L48,60 Z" />
+    <!-- East point -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M82,54 L60,48 L64,54 L60,60 Z" />
+    <!-- West point -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M26,54 L48,48 L44,54 L48,60 Z" />
+    <!-- Center core emblem -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,46 L62,54 L54,62 L46,54 Z" />
+    <!-- Quest checkmark -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M44,54 L51,61 L65,47" />
+</vector>

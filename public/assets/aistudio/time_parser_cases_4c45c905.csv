@@ -1,0 +1,52 @@
+﻿input_text,language,expected_time_local_24h,expected_duration_minutes,date_offset_days,expected_schedule_type,test_note
+gym by 6pm,en,18:00,,0,ByTime,Explicit 12-hour time
+study physics 2 hours,en,,120,0,Anytime,Duration only
+revise calculus for 45 minutes,en,,45,0,Anytime,Duration phrase
+finish assignment by 8:30 pm,en,20:30,,0,ByTime,Colon time
+workout at 7 am,en,07:00,,0,ByTime,At-time expression
+read for 15 min,en,,15,0,Anytime,Abbreviated duration
+clean room in 30 minutes,en,,,0,Ambiguous,Relative due time vs task duration ambiguous; ask or surface explicit interpretation
+submit form tomorrow by 10am,en,10:00,,1,ByTime,Relative date and due time
+call parents at 8 tonight,en,20:00,,0,ByTime,Contextual evening
+practice coding for 2.5 hours,en,,150,0,Anytime,Decimal duration
+shaam 6 baje tak gym,hinglish,18:00,,0,ByTime,Hindi time phrase
+subah 7 baje walk,hinglish,07:00,,0,ByTime,Morning time
+2 ghante physics padhna hai,hinglish,,120,0,Anytime,Hinglish duration
+30 minute coding practice,hinglish,,30,0,Anytime,Hinglish minutes
+kal 9 baje assignment submit,hinglish,09:00,,1,ByTime,Tomorrow due time
+raat 8 baje tak call karna,hinglish,20:00,,0,ByTime,Night phrase
+aadha ghanta meditation,hinglish,,30,0,Anytime,Half hour
+dedh ghanta ML padhna,hinglish,,90,0,Anytime,One and a half hours
+parso 6 pm meeting prepare,hinglish,18:00,,2,ByTime,Day after tomorrow
+dopahar 1 baje lunch prep,hinglish,13:00,,0,ByTime,Afternoon
+शाम 6 बजे तक जिम,hi,18:00,,0,ByTime,Devanagari time
+सुबह 7 बजे दौड़ना,hi,07:00,,0,ByTime,Devanagari morning
+2 घंटे भौतिकी पढ़नी है,hi,,120,0,Anytime,Devanagari duration
+30 मिनट ध्यान करना,hi,,30,0,Anytime,Devanagari minutes
+कल सुबह 9 बजे तक रिपोर्ट,hi,09:00,,1,ByTime,Relative date and deadline
+रात 8 बजे फोन करना,hi,20:00,,0,ByTime,Evening time
+डेढ़ घंटे coding practice,hi,,90,0,Anytime,Mixed-script duration
+परसों शाम 6 बजे मीटिंग,hi,18:00,,2,ByTime,Day after tomorrow
+by 6,en,,,0,Ambiguous,AM/PM ambiguous; must ask/confirm rather than silently guessing
+tomorrow,en,,,1,Anytime,Date-only phrase
+in 20 minutes,en,,,0,Ambiguous,Could be reminder offset or deadline; do not silently reinterpret
+next Monday at 9:15,en,09:15,,,ByTime,Next weekday should be resolved by test helper from a fixed anchor date
+shaam ko padhna,hinglish,,,0,Anytime,No exact time: do not invent one
+2 ghante baad reminder,hinglish,,,0,Anytime,"Relative reminder, not task duration; request clarification in UI"
+by 6:30 PM,en,18:30,,0,ByTime,Explicit time
+7:05 am walk,en,07:05,,0,ByTime,Minutes precision
+120 min DSA,en,,120,0,Anytime,Numeric minutes
+quarter hour journal,en,,15,0,Anytime,Quarter hour
+ek ghanta workout,hinglish,,60,0,Anytime,One hour
+paune saat baje call,hinglish,,,0,Ambiguous,06:45 vs 18:45 ambiguous without context; ask/confirm
+sawa 8 baje tak kaam,hinglish,,,0,Ambiguous,08:15 vs 20:15 ambiguous without context; ask/confirm
+रात 10:30 तक पढ़ाई,hi,22:30,,0,ByTime,Late night explicit
+दोपहर 2 से 3 बजे पढ़ना,hi,,,0,Range,Start-end time range
+work from 4 to 5 pm,en,,,0,Range,Start-end time range
+gym 6-7pm,en,,,0,Range,Compact time range
+kal 2 se 3 baje study,hinglish,,,1,Range,Relative date range
+every weekday at 7 am run,en,07:00,,0,ByTime,Repeat intent should be parsed separately
+roz subah 6 baje walk,hinglish,06:00,,0,ByTime,Daily recurrence
+हर रविवार 10 बजे revision,hi,10:00,,0,ByTime,Weekly recurrence
+read for 1h 20m,en,,80,0,Anytime,Compound duration
+study 1 hour 30 minutes,en,,90,0,Anytime,Compound duration

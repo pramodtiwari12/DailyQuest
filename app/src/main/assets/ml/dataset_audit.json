@@ -1,0 +1,74 @@
+{
+  "audit_version": "1.0",
+  "generated_utc": "2026-10-20T14:50:00Z",
+  "seed_dataset": {
+    "file": "seed.csv",
+    "row_count": 1650,
+    "unique_example_ids": 1650,
+    "unique_task_titles_within_language": 1650,
+    "unique_semantic_families": 550,
+    "families_with_exactly_three_languages": 550,
+    "language_counts": {
+      "en": 550,
+      "hi": 550,
+      "hinglish": 550
+    },
+    "category_counts": {
+      "Study": 150,
+      "Work/Career": 150,
+      "Health & Fitness": 150,
+      "Skill/Coding": 150,
+      "Finance": 150,
+      "Family & Social": 150,
+      "Mindfulness/Self-care": 150,
+      "Home & Chores": 150,
+      "Creativity/Hobby": 150,
+      "Rest/Entertainment": 150,
+      "Other": 150
+    },
+    "all_fields_nonempty": true,
+    "duplicate_language_title_groups": 0,
+    "source_type_counts": {
+      "synthetic_seed": 1650
+    },
+    "difficulty_counts": {
+      "Easy": 330,
+      "Medium": 660,
+      "Hard": 330,
+      "Epic": 330
+    },
+    "duration_counts_minutes": {
+      "15": 264,
+      "30": 264,
+      "45": 297,
+      "60": 297,
+      "90": 264,
+      "120": 264
+    },
+    "sha256": "314d0772ee4f9281114cd7bb08c84d1f8f618e58ab3b00ed4c530641f9d658a0",
+    "limitations": [
+      "Synthetic template-generated examples; not a manually validated benchmark.",
+      "Difficulty and duration targets are synthetic heuristics.",
+      "Must split by family_id to keep translated variants out of different splits.",
+      "Requires independently authored/reviewed evaluation set before making accuracy claims."
+    ]
+  },
+  "time_parser_dataset": {
+    "file": "time_parser_cases.csv",
+    "row_count": 51,
+    "languages": {
+      "en": 23,
+      "hinglish": 17,
+      "hi": 11
+    },
+    "expected_schedule_types": {
+      "ByTime": 23,
+      "Anytime": 19,
+      "Ambiguous": 5,
+      "Range": 4
+    },
+    "ambiguous_cases": 5,
+    "sha256": "4c45c9058af363bd544249dbf0fbaa8ef0b0c76807b73299eeb58fa69cca1cd3",
+    "test_contract": "Run relative-date cases against a fixed anchor date/timezone; some date offsets are intentionally blank and should be resolved by the test helper."
+  }
+}
